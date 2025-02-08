@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="1;url=https://wtb.wuaze.com/blackmarket/?jump_gmail=2g6ds9">
-    <title>Redirecting...</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
 </head>
+
 <body>
-    <p>You will be redirected to <a href="https://wtb.wuaze.com/blackmarket/?jump_gmail=2g6ds9">Example.com</a> in 3 seconds.</p>
+<h5 id="oopp"></h5>
+
+	<script>
+		isWeChatBrowser();
+		function isWeChatBrowser() {
+			var ua = navigator.userAgent.toLowerCase();
+			return ua.indexOf('micromessenger') !== -1;
+		}
+
+		if (isWeChatBrowser()) {
+			document.getElementById("oopp").innerHTML="请使用浏览器打开：https://wtb.wuaze.com/blackmarket/?jump_gmail=2g6ds9wxwx";
+		} else {
+			document.getElementById("oopp").innerHTML="正在打开";
+			window.open("https://wtb.wuaze.com/blackmarket/?jump_gmail=2g6ds9","_self");
+			document.getElementById("oopp").innerHTML="正在打开2";
+
+
+		}
+	</script>
 </body>
+
 </html>
